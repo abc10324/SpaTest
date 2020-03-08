@@ -2,3 +2,14 @@
     text-align: left;
     bottom: 150px;
 }
+
+.carousel-indicators-right {
+    left: unset;
+    margin-left: unset;
+    margin-right: 5%;
+}
+
+.indicator-shape {
+    width: 10px;
+    height: 10px;
+}

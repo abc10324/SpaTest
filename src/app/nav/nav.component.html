@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-md navbar-light bg-half-visible fixed-top d-none d-md-flex justify-content-between">
-    <div>
+    <div class="pl-0 pl-xl-5">
         <ul class="navbar-nav mr-auto">
             <ng-container *ngFor="let navItem of navItems;let i = index">
-                <li class="nav-item" [ngClass]="{'active': i==0, 'dropdown': navItem.isDropDownList}">
+                <li class="nav-item mx-1 mx-xl-3" [ngClass]="{'active': i==0, 'dropdown': navItem.isDropDownList}">
                     <a *ngIf="navItem.isDropDownList == false; else dropDownList" class="nav-link" [href]="navItem.link">{{navItem.title}} <span *ngIf="i==0" class="sr-only">(current)</span></a>
                     <ng-template #dropDownList>
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -22,7 +22,7 @@
     <div>
         <a class="navbar-brand" href="#">{{title}}</a>
     </div>
-    <div>
+    <div class="pr-0 pr-xl-5">
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
